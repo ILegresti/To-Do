@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(img/rainbow-vortex.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body main{
+    background-color: white;
+}
+
+.contenedor{
+    width: 70vh;
+    min-height: 60vh;
+    border-radius: 20px;
+    padding: 40px;
+    border: solid 5px rgb(6, 112, 250);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+input{
+    width: 80%;
+    height: 2rem;
+    font-size: 1rem;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid rgb(6, 112, 250);
+    border-radius: 10px;
+}
+
+button{
+    width: 7rem;
+    height: 2.5rem;
+    padding: 10px;
+    color: white;
+    background-color:blue ;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+#lista-tareas{
+    width: 80%;
+    margin-top: 20px;
+}
+
+/*     TAREA  */
+.tarea{
+    width: 100%;
+    min-height: 1.5rem;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(20, 20, 196);
+    border: 2px solid rgb(6, 112, 250);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/*  TAREA COMPLETADA */
+
+.tarea.completada{
+    text-decoration: line-through;
+    background-color: black;
+}
+
+.tarea p{
+    max-width: 350px;
+}
+
+/* ICONOS */
+
+i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icono-completar{
+    color: rgb(3, 252, 53);
+}
+
+.icono-eliminar{
+    color: white;
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+    background-color: rgb(255, 255, 255,0.520);
+
+}
+
